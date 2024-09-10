@@ -18,6 +18,7 @@ int main()
             cin >> a[i][j];
         }
     }
+    
     //..........PRINT SECOND MATRIX.........
     cout << "This is first matrix" << endl;
     for (i = 0; i < row; i++)

@@ -2,13 +2,18 @@
 using namespace std;
 
 int main()
-{ 
+{
     int n, t1 = 0, t2 = 1, nextTerm = 0;
 
     cout << "Enter the number of terms: ";
     cin >> n;
-
-    cout << "Fibonacci Series: ";
+    if (n == 0)
+    {
+        cout << "Plese enter the real number to show the, Febonacci number";
+    };
+    if(n != 0){
+        cout << "Fibonacci Series: ";
+    }
 
     for (int i = 1; i <= n; ++i)
     {
@@ -30,8 +35,3 @@ int main()
     }
     return 0;
 }
-
-
-
-
-
