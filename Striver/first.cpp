@@ -60,7 +60,7 @@ int main()
     // cout<<"The value of string is"<<str<<endl;
     // cout<<"The value of char is"<<h<<endl;
 
-    // if,else
+    // -- if, else, else if --------------------------------
 
     // do the problem
     // if stdent score in exam 100 then print "perfect"
@@ -73,39 +73,69 @@ int main()
     // else print "invalid score"
     // // input: 90
 
-    int studentScore;
-    cin >> studentScore;
-    if (studentScore == 100)
-    {
-        cout << "perfect" << endl;
-    }
-    else if (studentScore == 90 || studentScore == 99)
-    {
-        cout << "excellent" << endl;
-    }
-    else if (studentScore >= 80 && studentScore <= 89)
-    {
-        cout << "good" << endl;
-    }
-    else if (studentScore >= 70 && studentScore <= 79)
-    {
-        cout << "fair" << endl;
-    }
-    else if (studentScore >= 60 && studentScore <= 69)
-    {
-        cout << "meets expectations" << endl;
-    }
-    else if (studentScore >= 50 && studentScore <= 59)
-    {
-        cout << "below expectations" << endl;
-    }
-    else if (studentScore >= 0 && studentScore <= 49)
-    {
-        cout << "unsatisfactory" << endl;
-    }
-    else
-    {
-        cout << "invalid score" << endl;
-    }
+    // int studentScore;
+    // cin >> studentScore;
+    // if (studentScore == 100)
+    // {
+    //     cout << "perfect" << endl;
+    // }
+    // else if (studentScore == 90 || studentScore == 99)
+    // {
+    //     cout << "excellent" << endl;
+    // }
+    // else if (studentScore >= 80 && studentScore <= 89)
+    // {
+    //     cout << "good" << endl;
+    // }
+    // else if (studentScore >= 70 && studentScore <= 79)
+    // {
+    //     cout << "fair" << endl;
+    // }
+    // else if (studentScore >= 60 && studentScore <= 69)
+    // {
+    //     cout << "meets expectations" << endl;
+    // }
+    // else if (studentScore >= 50 && studentScore <= 59)
+    // {
+    //     cout << "below expectations" << endl;
+    // }
+    // else if (studentScore >= 0 && studentScore <= 49)
+    // {
+    //     cout << "unsatisfactory" << endl;
+    // }
+    // else
+    // {
+    //     cout << "invalid score" << endl;
+    // }
+
+    //-- switch --------------------------------
+
+    // int day ;
+    // cin >> day;
+    // switch(day)
+    // {
+    //     case 1:
+    //     cout << "monday" << endl;
+    //     break;
+    //     case 2:
+    //     cout << "tuesday" << endl;
+    //     break;
+    //     case 3:
+    //     cout << "wednesday" << endl;
+    //     break;
+    //     case 4:
+    //     cout << "thursday" << endl;
+    //     break;
+    //     case 5:
+    //     cout<< "friday" << endl;
+    //     break;
+    //     case 6:
+    //     cout<< "saturday" << endl;
+    //     break;
+    //     case 7:
+    //     cout<< "sunday" << endl;
+    //     break;
+    //     default : cout<<"invalid day number"<<endl;
+    // }
     return 0;
 }
