@@ -35,6 +35,7 @@ int main()
     // cout<<"the value of f is[true:1, false:0]:"<<f<<endl;
 
     // string f = " have 1 byte of memory and range is [0 to 1 "<<range<< "] "
+    // it read the charecter by charecter and store in the string variable.
 
     // string str;
     // cin>>str;
@@ -138,9 +139,9 @@ int main()
     //     default : cout<<"invalid day number"<<endl;
     // }
 
-//  -- Array ----------------------------------------------------------------
+    //  -- Array ----------------------------------------------------------------
     // -- element_type array_name [size]
-    // --int arr[5];    
+    // --int arr[5];
     // -- Address of ith element = base + (i x size)
     // int arr[5] = {1, 2, 3, 4, 5};
     // cout << arr[0] << endl;
@@ -150,23 +151,107 @@ int main()
     // }
 
     // 2d array --------------------------------
-    int arr[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-    // cout << arr[0][0] << endl;
-    // cout << arr[0][1] << endl;
-    // cout << arr[0][2] << endl;
-    // cout << arr[1][0] << endl;
-    // cout << arr[1][1] << endl;
-    // cout << arr[1][2] << endl;
-    // cout << arr[2][0] << endl;
-    // cout << arr[2][1] << endl;
-    // cout << arr[2][2] << endl;
-    for(int i = 0; i < 3; i++)
-    {
-        for(int j = 0; j < 3; j++)
-        {
-            cout << arr[i][j] << " ";
-        }
-        cout << endl;
-    }
+    // int arr[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+    // // cout << arr[0][0] << endl;
+    // // cout << arr[0][1] << endl;
+    // // cout << arr[0][2] << endl;
+    // // cout << arr[1][0] << endl;
+    // // cout << arr[1][1] << endl;
+    // // cout << arr[1][2] << endl;
+    // // cout << arr[2][0] << endl;
+    // // cout << arr[2][1] << endl;
+    // // cout << arr[2][2] << endl;
+    // for(int i = 0; i < 3; i++)
+    // {
+    //     for(int j = 0; j < 3; j++)
+    //     {
+    //         cout << arr[i][j] << " ";
+    //     }
+    //     cout << endl;
+    // }
+
+    // Print matrix  .............................................
+    // int row;
+    // int col;
+    // cin >> row >> col;
+    // int arr[row][col];
+    // cout << "enter the firstmatrix element" << endl;
+    // for (int i = 0; i < row; i++)
+    // {
+    //     for (int j = 0; j < col; j++)
+    //     {
+    //         cin >> arr[i][j];
+    //     }
+    // }
+    // cout << "The first matrix is " << endl;
+    // for (int i = 0; i < row; i++)
+    // {
+    //     for (int j = 0; j < col; j++)
+    //     {
+    //         cout << arr[i][j] << " ";
+    //     }
+    //     cout << endl;
+    // }
+    // cout << "The second matrix element is " << endl;
+    // int arr1[row][col];
+    // for (int i = 0; i < row; i++)
+    // {
+    //     for (int j = 0; j < col; j++)
+    //     {
+    //         cin >> arr1[i][j];
+    //     }
+    // }
+    // cout << "The second matrix is " << endl;
+    // for (int i = 0; i < row; i++)
+    // {
+    //     for (int j = 0; j < col; j++)
+    //     {
+    //         cout << arr1[i][j] << " ";
+    //     }
+    //     cout << endl;
+    // }
+    // cout << "The sum of the matrix is " << endl;
+    // int sum[row][col];
+    // for (int i = 0; i < row; i++)
+    // {
+    //     for (int j=0;j<col; j++)
+    //     {
+    //         sum[i][j] = arr[i][j] + arr1[i][j];
+    //         cout<<sum[i][j]<<" ";
+    //     }
+    //     cout<<endl;
+        
+    // }
+
+    // loops 
+    // for loop --------------------------------------------------------------------
+//     int num;
+//     cout<<"Enter the number that you want to write the factorial:";
+//     cin>>num;
+//     int fact =1;
+//     // syntax of for loop  
+//     // for(Data_Type initialization, Condition; Update(initialization));
+//     for(int i=1;i<=num;i++)
+//     {
+//         fact = fact * i;
+//     }
+// cout<<"The factorial is "<< fact << endl;
+
+// while loop 
+// syntax 
+// while(Condition){
+//    Property
+//     Updation
+// }
+
+
+// string str = "Nitish";
+// int length = str.size();
+// cout<<str[length - 1]<<endl;  
+// string str(number,character);
+// String contain in single '' coat and character contain in double "" coat. ----------------------------------------------------------------
+string str(6,'Nitish');
+cout<<str<<endl;
+// output: hhhhhh
     return 0;
 }
