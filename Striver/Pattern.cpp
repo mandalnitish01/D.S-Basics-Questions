@@ -3,48 +3,96 @@
 // for colum
 // the printing
 
-// * * * *           
 // * * * *
 // * * * *
 // * * * *
+// * * * *
 
 
-// * 
-// * * 
-// * * * 
-// * * * * 
-// * * * * * 
-// * * * * * * 
-// * * * * * * * 
+// *
+// * *
+// * * *
+// * * * *
+// * * * * *
+// * * * * * *
+// * * * * * * *
 
 
-// 1 
-// 1 2 
-// 1 2 3 
-// 1 2 3 4 
-// 1 2 3 4 5 
-// 1 2 3 4 5 6 
+// 1
+// 1 2
+// 1 2 3
+// 1 2 3 4
+// 1 2 3 4 5
+// 1 2 3 4 5 6
 
 
-// 1 
-// 2 2 
-// 3 3 3 
-// 4 4 4 4 
+// 1
+// 2 2
+// 3 3 3
+// 4 4 4 4
 
 
-// * * * * * * * * 
-// * * * * * * * 
-// * * * * * * 
-// * * * * * 
-// * * * * 
-// * * * 
-// * * 
-// * 
+// * * * * * * * *
+// * * * * * * *
+// * * * * * *
+// * * * * *
+// * * * *
+// * * *
+// * *
+// *
 
 
+// 1 2 3 4 5 6 7 8
+// 1 2 3 4 5 6 7
+// 1 2 3 4 5 6
+// 1 2 3 4 5
+// 1 2 3 4
+// 1 2 3
+// 1 2
+// 1
 
 
+//        *
+//       ***
+//      *****
+//     *******
+//    *********
+//   ***********
 
+
+// ***********
+//  ********* 
+//   *******  
+//    *****   
+//     ***    
+//      *     
+
+
+//        *
+//       ***
+//      *****
+//     *******
+//    *********
+//   ***********
+//   ***********
+//    ********* 
+//     *******  
+//      *****   
+//       ***    
+//        * 
+
+
+// *
+// **
+// ***
+// ****
+// *****
+// ******
+// *****
+// ****
+// ***
+// **
+// *
 
 #include <iostream>
 using namespace std;
@@ -59,56 +107,130 @@ void pattern1(int input)
         cout << endl;
     }
 }
-void pattern2(int input){
-  for(int i=0;i<input;i++){
-        for(int j=0;j<i+1;j++){
-            cout<<"* ";
+void pattern2(int input)
+{
+    for (int i = 0; i < input; i++)
+    {
+        for (int j = 0; j < i + 1; j++)
+        {
+            cout << "* ";
         }
-        cout<<endl;
+        cout << endl;
     }
 }
-void pattern3(int input){
-    for(int i=0;i<input;i++){
-        for(int j=0;j<i+1;j++){
-            cout<<j+1<<" ";
+void pattern3(int input)
+{
+    for (int i = 0; i < input; i++)
+    {
+        for (int j = 0; j < i + 1; j++)
+        {
+            cout << j + 1 << " ";
         }
-        cout<<endl;
+        cout << endl;
     }
 }
-void pattern4(int input){
-    for(int i=0;i<input;i++){
-        for(int j=0;j<i+1;j++){
-            cout<<i+1<<" ";
+void pattern4(int input)
+{
+    for (int i = 0; i < input; i++)
+    {
+        for (int j = 0; j < i + 1; j++)
+        {
+            cout << i + 1 << " ";
         }
-        cout<<endl;
+        cout << endl;
     }
-} 
-// void pattern5(int input){
-//     for(int i=0;i<input;i++){
-//         for(int j=input;j>=i+1;j--){
-//             cout<<"* ";
-//         }
-//         cout<<endl;
-//     }
-// }
-void pattern5_1(int input){
-   for(int i=1;i<=input;i++){
-        for(int j=0;j<input -i+1;j++){
+}
+void pattern5(int input)
+{
+    for (int i = 0; i < input; i++)
+    {
+        for (int j = input; j >= i + 1; j--)
+        {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+}
+void pattern5_1(int input)
+{
+    for (int i = 1; i <= input; i++)
+    {
+        for (int j = 0; j < input - i + 1; j++)
+        {
             // solve using the formula [ input - i + 1 ]
-            cout<<"* ";
+            cout << "* ";
         }
-        cout<< endl;
+        cout << endl;
     }
 }
-void pattern6(int input){
-    for(int i=1;i<=input;i++){
-        for(int j=0;j<input -i+1;j++){
-            cout<< j +1 <<" ";
+void pattern6(int input)
+{
+    for (int i = 1; i <= input; i++)
+    {
+        for (int j = 0; j < input - i + 1; j++)
+        {
+            cout << j + 1 << " ";
         }
-        cout<< endl;
+        cout << endl;
     }
 }
+void pattern7(int input)
+{
+    // outer loop for row
+    for (int i = 0; i < input; i++)
+    {
+        for (int j = 0; j < input - i + 1; j++)
+        {
+            cout << " ";
+        }
+        for (int j = 0; j < 2 * i + 1; j++)
+        {
+            cout << "*";
+        }
+        for (int j = 0; j < input - i - 1; j++)
+        {
+            cout << " ";
+        }
+        cout << endl;
+    }
+    // to sole this problem we have to use the formula [ 2 * i + 1 ] to calculate the number of star positions in each row and 
+    // [ input - i + 1 ] to calculate the number of spaces in each row.
+}
+void pattern8(int input)
+{
 
+    for (int i = 0; i < input; i++)
+    {
+        // space
+        for(int j=0;j<i;j++){
+            cout<<" ";
+        }
+        // star
+        for(int j=0;j<2*input- (2*i+1);j++)
+        {
+            cout<<"*";
+        }
+
+        // space
+        for(int j=0;j<i;j++){
+            cout<<" ";
+        }
+        cout<<endl;
+    }
+      // to sole this problem we have to use the formula [ 2*input- (2*i+1) ] to calculate the number of star positions in each row and 
+    // [ j=0;j<i;j++] to calculate the number of spaces in each row.
+}
+void pattern9(int input){
+    for(int i=0;i<=input*2-1;i++){
+        int start = i;
+        if(i > input)
+        start = 2*input-i;
+        for(int j=1;j<=start;j++){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+}
 int main()
 {
     int runtime;
@@ -122,12 +244,12 @@ int main()
         // pattern3(input);
         // pattern4(input);
         // pattern5(input);
-        pattern5_1(input);
+        // pattern5_1(input);
         // pattern6(input);
+        // pattern7(input);
+        // pattern8(input);
+        // pattern9(input);
     }
 
     return 0;
 }
-
-
-
