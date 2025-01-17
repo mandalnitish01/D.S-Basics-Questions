@@ -94,6 +94,24 @@
 // **
 // *
 
+
+// 1 
+// 0 1 
+// 1 0 1 
+// 0 1 0 1 
+// 1 0 1 0 1 
+// 0 1 0 1 0 1 
+// 1 0 1 0 1 0 1 
+
+
+// 1            1
+// 12          21
+// 123        321
+// 1234      4321
+// 12345    54321
+// 123456  654321
+// 12345677654321
+
 #include <iostream>
 using namespace std;
 void pattern1(int input)
@@ -231,6 +249,37 @@ void pattern9(int input){
         cout<<endl;
     }
 }
+void pattern10(int input){
+    int start = 1;
+    for(int i=0;i<input;i++){
+        if(i % 2 == 0) start = 1;
+        else start = 0;
+        for(int j=0;j<=i;j++){
+            cout<< start << " ";
+            start = 1-start;
+        }
+        cout<<endl;
+    }
+}
+void pattern11(int input){
+    int space = 2*(input-1);
+    for(int i=1;i<=input;i++){
+        // number 
+        for(int j=1;j<=i;j++){
+            cout<<j;
+        }
+        // space 
+        for(int j=1;j<=space;j++){
+            cout<<" ";
+        }
+        // number 
+         for(int j=i;j>0;j--){
+            cout<<j;
+        }
+        cout<<endl;
+        space -= 2;
+    }
+}
 int main()
 {
     int runtime;
@@ -249,6 +298,9 @@ int main()
         // pattern7(input);
         // pattern8(input);
         // pattern9(input);
+        // pattern10(input);
+        pattern11(input);
+        
     }
 
     return 0;
