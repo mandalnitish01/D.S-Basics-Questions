@@ -7,8 +7,7 @@
 // * * * *
 // * * * *
 // * * * *
-
-
+// pattern 2
 // *
 // * *
 // * * *
@@ -16,21 +15,20 @@
 // * * * * *
 // * * * * * *
 // * * * * * * *
-
-
+// pattern 3
 // 1
 // 1 2
 // 1 2 3
 // 1 2 3 4
 // 1 2 3 4 5
 // 1 2 3 4 5 6
-
+// pattern 4
 
 // 1
 // 2 2
 // 3 3 3
 // 4 4 4 4
-
+// pattern 4
 
 // * * * * * * * *
 // * * * * * * *
@@ -61,11 +59,11 @@
 
 
 // ***********
-//  ********* 
-//   *******  
-//    *****   
-//     ***    
-//      *     
+//  *********
+//   *******    
+//    *****
+//     ***
+//      *
 
 
 //        *
@@ -75,11 +73,11 @@
 //    *********
 //   ***********
 //   ***********
-//    ********* 
-//     *******  
-//      *****   
-//       ***    
-//        * 
+//    *********
+//     *******
+//      *****
+//       ***
+//        *
 
 
 // *
@@ -95,13 +93,13 @@
 // *
 
 
-// 1 
-// 0 1 
-// 1 0 1 
-// 0 1 0 1 
-// 1 0 1 0 1 
-// 0 1 0 1 0 1 
-// 1 0 1 0 1 0 1 
+// 1
+// 0 1
+// 1 0 1
+// 0 1 0 1
+// 1 0 1 0 1
+// 0 1 0 1 0 1
+// 1 0 1 0 1 0 1
 
 
 // 1            1
@@ -127,9 +125,9 @@ void pattern1(int input)
 }
 void pattern2(int input)
 {
-    for (int i = 0; i < input; i++)
+    for (int i = 1; i <= input; i++)
     {
-        for (int j = 0; j < i + 1; j++)
+        for (int j = 1; j <= i; j++)
         {
             cout << "* ";
         }
@@ -138,11 +136,11 @@ void pattern2(int input)
 }
 void pattern3(int input)
 {
-    for (int i = 0; i < input; i++)
+    for (int i = 1; i <= input; i++)
     {
-        for (int j = 0; j < i + 1; j++)
+        for (int j = 1; j <= i; j++)
         {
-            cout << j + 1 << " ";
+            cout << j << " ";
         }
         cout << endl;
     }
@@ -211,72 +209,126 @@ void pattern7(int input)
         }
         cout << endl;
     }
-    // to sole this problem we have to use the formula [ 2 * i + 1 ] to calculate the number of star positions in each row and 
+    // to sole this problem we have to use the formula [ 2 * i + 1 ] to calculate the number of star positions in each row and
     // [ input - i + 1 ] to calculate the number of spaces in each row.
 }
-void pattern8(int input)
+void pattern7_1(int input)
 {
-
     for (int i = 0; i < input; i++)
     {
         // space
-        for(int j=0;j<i;j++){
-            cout<<" ";
-        }
-        // star
-        for(int j=0;j<2*input- (2*i+1);j++)
+        for (int j = 0; j < input - i - 1; j++)
         {
-            cout<<"*";
+            cout << " ";
+        }
+        // stars
+        for (int j = 0; j < 2 * i + 1; j++)
+        {
+            cout << "*";
         }
 
         // space
+        for (int j = 0; j < input - i - 1; j++)
+        {
+            cout << " ";
+        }
+        cout<<endl;
+    }
+}
+// void pattern8(int input)
+// {
+//     for (int i = 0; i < input; i++)
+//     {
+//         // space
+//         for (int j = 0; j < i; j++)
+//         {
+//             cout << " ";
+//         }
+//         // star
+//         for (int j = 0; j < 2 * input - (2 * i + 1); j++)
+//         {
+//             cout << "*";
+//         }
+//         // space
+//         for (int j = 0; j < i; j++)
+//         {
+//             cout << " ";
+//         }
+//         cout << endl;
+//     }
+//     // to sole this problem we have to use the formula [ 2*input- (2*i+1) ] to calculate the number of star positions in each row and
+//     // [ j=0;j<i;j++] to calculate the number of spaces in each row.
+// }
+void pattern8_1(int input){
+    for(int i=0;i<input;i++){
+        // space 
+        for(int j=0;j<i;j++){
+            cout<<" ";
+        }
+        // stars 
+    for(int j=0;j<2*input-2*i-1;j++){
+        cout<<"*";
+    }
+
+        // space 
         for(int j=0;j<i;j++){
             cout<<" ";
         }
         cout<<endl;
     }
-      // to sole this problem we have to use the formula [ 2*input- (2*i+1) ] to calculate the number of star positions in each row and 
-    // [ j=0;j<i;j++] to calculate the number of spaces in each row.
 }
-void pattern9(int input){
-    for(int i=0;i<=input*2-1;i++){
+void pattern9(int input)
+{
+    for (int i = 0; i <= input * 2 - 1; i++)
+    {
         int start = i;
-        if(i > input)
-        start = 2*input-i;
-        for(int j=1;j<=start;j++){
-            cout<<"*";
+        if (i > input)
+            start = 2 * input - i;
+        for (int j = 1; j <= start; j++)
+        {
+            cout << "*";
         }
-        cout<<endl;
+        cout << endl;
     }
 }
-void pattern10(int input){
+void pattern10(int input)
+{
     int start = 1;
-    for(int i=0;i<input;i++){
-        if(i % 2 == 0) start = 1;
-        else start = 0;
-        for(int j=0;j<=i;j++){
-            cout<< start << " ";
-            start = 1-start;
+    for (int i = 0; i < input; i++)
+    {
+        if (i % 2 == 0)
+            start = 1;
+        else
+            start = 0;
+        for (int j = 0; j <= i; j++)
+        {
+            cout << start << " ";
+            start = 1 - start;
         }
-        cout<<endl;
+        cout << endl;
     }
 }
-void pattern11(int input){
-    int space = 2*(input-1);
-    for(int i=1;i<=input;i++){
-        // number 
-        for(int j=1;j<=i;j++){
-            cout<<j;
+void pattern11(int input)
+{
+    int space = 2 * (input - 1);
+    for (int i = 1; i <= input; i++)
+    {
+        // number
+        for (int j = 1; j <= i; j++)
+        {
+            cout << j;
         }
-        // space 
-        for(int j=1;j<=space;j++){
-            cout<<" ";
+        // space
+        for (int j = 1; j <= space; j++)
+        {
+            cout << " ";
         }
-        // number 
-         for(int j=i;j>0;j--){
-            cout<<j;
+        // number
+        for (int j = i; j > 0; j--)
+        {
+            cout << j;
         }
-        cout<<endl;
+        cout << endl;
         space -= 2;
     }
 }
@@ -297,10 +349,12 @@ int main()
         // pattern6(input);
         // pattern7(input);
         // pattern8(input);
+        //merge these code that are given bellow for diamond pattern 
+        // pattern7_1(input);
+        // pattern8_1(input);
         // pattern9(input);
         // pattern10(input);
-        pattern11(input);
-        
+        // pattern11(input);
     }
 
     return 0;
