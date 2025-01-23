@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/nitish/Desktop/D.S Basics Questions/Programming",
-      "program": "/home/nitish/Desktop/D.S Basics Questions/Programming/build/Debug/outDebug",
+      "cwd": "/home/nitish/Desktop/D.S Basics Questions/GFG",
+      "program": "/home/nitish/Desktop/D.S Basics Questions/GFG/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
