@@ -1,0 +1,9 @@
+# Recursion: -
+- when a function called itself. [this function is called infinitely and break the code througn the degmentation when memory spce is ensd.]
+- Untill the specified condition is met
+
+Basics problems in Recursion
+
+1. print name 5 times
+2. Print linear 1 to N 
+3. Print from N to 1 

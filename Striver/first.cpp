@@ -42,7 +42,7 @@
 //     // cout<<"the value of str is:"<<str<<endl;
 //     // input: hyy naman
 //     // output: the value of str is:hyy
-//     // -- string is taken his first vlaue of the value of str is the string that    will be inserted by the user in the output file with the value of str inserted by the user.
+//     // -- string is taken his first vlaue of the entered  value of str variable is the string that    will be inserted by the user in the output file with the value of str inserted by the user.
 //     //-- string me jbb hum koie input dete hai or beech me space dete hai then woo space se pahle wala value hee stre karta hai apne ek variable me
 
 //     // string str1, str2;
