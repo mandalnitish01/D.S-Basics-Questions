@@ -75,14 +75,36 @@
 
 // 3. Sum of first N numbers
 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout<<"Enter the number: ";
+//     cin>>n;
+//     cout<<n*(n+1)/2;
+//     return 0;
+// }
+
+
+// 4. Sum of first n number using recursion
+//  input :- 5
+// output :- 1^3 + 2^3  + 3^3 + 4^3 + 5^3 
+
 #include<iostream>
 using namespace std;
+
+void addfun(int n,int sum){
+    if(n < 0){
+        return;
+    }
+    sum = sum + n;
+    addfun(n-1,sum+n);
+}
 int main(){
     int n;
-    cout<<"Enter the number: ";
-    cin>>n;
-    cout<<n*(n+1)/2;
+    cout<<"Number: ";
+    cin >> n;
+    addfun(n,0);
     return 0;
 }
-
 
