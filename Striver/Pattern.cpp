@@ -39,6 +39,7 @@
 // * *
 // *
 
+// p5
 
 // 1 2 3 4 5 6 7 8
 // 1 2 3 4 5 6 7
@@ -49,7 +50,7 @@
 // 1 2
 // 1
 
-
+// p6 
 //        *
 //       ***
 //      *****
@@ -57,7 +58,7 @@
 //    *********
 //   ***********
 
-
+// p7 
 // ***********
 //  *********
 //   *******    
@@ -259,7 +260,7 @@ void pattern7_1(int input)
 //     // to sole this problem we have to use the formula [ 2*input- (2*i+1) ] to calculate the number of star positions in each row and
 //     // [ j=0;j<i;j++] to calculate the number of spaces in each row.
 // }
-void pattern8_1(int input){
+void pattern8(int input){
     for(int i=0;i<input;i++){
         // space 
         for(int j=0;j<i;j++){
