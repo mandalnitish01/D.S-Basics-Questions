@@ -7,12 +7,14 @@
 //     // cout<<"hyy Nitish"<<endl;
 //     // cout<<"kya haal hai"<<endl;
 
-//     // --  input & output --------------------------------
-//     // int a,b;
-//     // cin>>a>>b;
-//     // cout<<"the value of input a:"<<a<<endl<<"the value of input b:"<<b<<endl;
 
-//     // -- data types --------------------------------
+
+//     // ----------------------------  input & output  Operations--------------------------------
+//     // int a,b;
+//     // cin>>a>>b; //take input 
+//     // cout<<"the value of input a:"<<a<<endl<<"the value of input b:"<<b<<endl; //print output
+
+//     // ------------------------------------ data types --------------------------------
 //     // int x = 10; //int have 4 bytes of memory and range is [2^31 to 2^31-1]
 //     // cout<<"the value of x is:"<<x<<endl;
 
@@ -42,8 +44,8 @@
 //     // cout<<"the value of str is:"<<str<<endl;
 //     // input: hyy naman
 //     // output: the value of str is:hyy
-//     // -- string is taken his first vlaue of the entered  value of str variable is the string that    will be inserted by the user in the output file with the value of str inserted by the user.
-//     //-- string me jbb hum koie input dete hai or beech me space dete hai then woo space se pahle wala value hee stre karta hai apne ek variable me
+//     // -- string is taken his first vlaue of the entered  value of str variable is the string that  will be inserted by the user in the output file with the value of str inserted by the user.
+//     //-- string me jbb hum koie input dete hai or beech me space dete hai then woo space se pahle wala value hee     store karta hai apne ek variable me
 
 //     // string str1, str2;
 //     // cin>>str1>>str2;
@@ -61,7 +63,7 @@
 //     // cout<<"The value of string is"<<str<<endl;
 //     // cout<<"The value of char is"<<h<<endl;
 
-//     // -- if, else, else if --------------------------------
+//     // ------------------------------------ if, else, else if --------------------------------
 
 //     // do the problem
 //     // if stdent score in exam 100 then print "perfect"
@@ -109,8 +111,9 @@
 //     //     cout << "invalid score" << endl;
 //     // }
 
-//     //-- switch --------------------------------
+//     //------------------------------------ switch --------------------------------
 
+//print the day of the week using switch case
 //     // int day ;
 //     // cin >> day;
 //     // switch(day)
@@ -139,7 +142,7 @@
 //     //     default : cout<<"invalid day number"<<endl;
 //     // }
 
-//     //  -- Array ----------------------------------------------------------------
+//     //  ------------------------------------ Array -----------------------------------
 //     // -- element_type array_name [size]
 //     // --int arr[5];
 //     // -- Address of ith element = base + (i x size)
@@ -150,7 +153,7 @@
 //     //     cout << arr[i] << " ";
 //     // }
 
-//     // 2d array --------------------------------
+//     //-------------------------------- 2d array --------------------------------
 //     // int arr[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
 //     // // cout << arr[0][0] << endl;
 //     // // cout << arr[0][1] << endl;
@@ -171,73 +174,77 @@
 //     // }
 
 //     // Print matrix  .............................................
-//     // int row;
-//     // int col;
-//     // cin >> row >> col;
-//     // int arr[row][col];
-//     // cout << "enter the firstmatrix element" << endl;
-//     // for (int i = 0; i < row; i++)
-//     // {
-//     //     for (int j = 0; j < col; j++)
-//     //     {
-//     //         cin >> arr[i][j];
-//     //     }
-//     // }
-//     // cout << "The first matrix is " << endl;
-//     // for (int i = 0; i < row; i++)
-//     // {
-//     //     for (int j = 0; j < col; j++)
-//     //     {
-//     //         cout << arr[i][j] << " ";
-//     //     }
-//     //     cout << endl;
-//     // }
-//     // cout << "The second matrix element is " << endl;
-//     // int arr1[row][col];
-//     // for (int i = 0; i < row; i++)
-//     // {
-//     //     for (int j = 0; j < col; j++)
-//     //     {
-//     //         cin >> arr1[i][j];
-//     //     }
-//     // }
-//     // cout << "The second matrix is " << endl;
-//     // for (int i = 0; i < row; i++)
-//     // {
-//     //     for (int j = 0; j < col; j++)
-//     //     {
-//     //         cout << arr1[i][j] << " ";
-//     //     }
-//     //     cout << endl;
-//     // }
-//     // cout << "The sum of the matrix is " << endl;
-//     // int sum[row][col];
-//     // for (int i = 0; i < row; i++)
-//     // {
-//     //     for (int j=0;j<col; j++)
-//     //     {
-//     //         sum[i][j] = arr[i][j] + arr1[i][j];
-//     //         cout<<sum[i][j]<<" ";
-//     //     }
-//     //     cout<<endl;
+// #include <iostream>
+// using namespace std;
+// int main()
+// {       
+//     int row;
+//     int col;
+//     cin >> row >> col;
+//     int arr[row][col];
+//     cout << "enter the firstmatrix element" << endl;
+//     for (int i = 0; i < row; i++)
+//     {
+//         for (int j = 0; j < col; j++)
+//         {
+//             cin >> arr[i][j];
+//         }
+//     }
+//     cout << "The first matrix is " << endl;
+//     for (int i = 0; i < row; i++)
+//     {
+//         for (int j = 0; j < col; j++)
+//         {
+//             cout << arr[i][j] << " ";
+//         }
+//         cout << endl;
+//     }
+//     cout << "The second matrix element is " << endl;
+//     int arr1[row][col];
+//     for (int i = 0; i < row; i++)
+//     {
+//         for (int j = 0; j < col; j++)
+//         {
+//             cin >> arr1[i][j];
+//         }
+//     }
+//     cout << "The second matrix is " << endl;
+//     for (int i = 0; i < row; i++)
+//     {
+//         for (int j = 0; j < col; j++)
+//         {
+//             cout << arr1[i][j] << " ";
+//         }
+//         cout << endl;
+//     }
+//     cout << "The sum of the matrix is " << endl;
+//     int sum[row][col];
+//     for (int i = 0; i < row; i++)
+//     {
+//         for (int j=0;j<col; j++)
+//         {
+//             sum[i][j] = arr[i][j] + arr1[i][j];
+//             cout<<sum[i][j]<<" ";
+//         }
+//         cout<<endl;
 
-//     // }
+//     }
 
-
-
-
-
-
-
-
+// }
 
 
 
 
 
 
-//     // loops
-//     // for loop --------------------------------------------------------------------
+
+
+
+
+
+
+//     // ----------------------------------------- loops -----------------------------------------
+//     // ----------------------------------------- for loop ---------------------------
 //     //     int num;
 //     //     cout<<"Enter the number that you want to write the factorial:";
 //     //     cin>>num;
@@ -268,7 +275,7 @@
 //     // cout<<str<<endl;
 //     // output: hhhhhh
 
-//     // loops ----------------------------------------------------------------
+//     //-------------------------------------- loops ----------------------------------------------------------------
 //     // int n;
 //     // cin >> n;
 //     // cout<<endl;
@@ -385,17 +392,17 @@
 //     cout<<a<<endl; //10
 // }
 
-#include<iostream>
-using namespace std;
-int passby(int a, int &b){
-    return a+=1;
-    return b+=2;
-}
-int main(){
-    int a = 10;
-    int b=5;
-    passby(a,b);
-    cout<<a<<endl;
-    cout<<b<<endl;
-    return 0;
-}
+// #include<iostream>
+// using namespace std;
+// int passby(int a, int &b){
+//     return a+=1;
+//     return b+=2;
+// }
+// int main(){
+//     int a = 10;
+//     int b=5;
+//     passby(a,b);
+//     cout<<a<<endl;
+//     cout<<b<<endl;
+//     return 0;
+// }

@@ -353,6 +353,7 @@ int main()
         //merge these code that are given bellow for diamond pattern 
         // pattern7_1(input);
         // pattern8_1(input);
+        
         // pattern9(input);
         // pattern10(input);
         // pattern11(input);
